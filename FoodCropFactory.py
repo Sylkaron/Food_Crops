@@ -1,9 +1,13 @@
-import Unit, indicator, Measurement
+from Indicator import *
+from Unit import *
+from Measurement import *
 
-class FoodCropFactory():
+class FoodCropFactory:
 
-    def __init__(self):
-        pass
+    def __init__(self, unitsRegistry: dict, indicatorsRegistry: dict, commodityRegistry: dict):
+        self.__unitsRegistry = unitsRegistry
+        self.__indicatorsRegistry = indicatorsRegistry
+        self.__commodityRegistry = commodityRegistry
 
     def createVolume(self, id:int):
         return Volume(id)
@@ -24,7 +28,7 @@ class FoodCropFactory():
         return Ratio(id)
 
     def createCommodity(self, group:CommodityGroup, id:int, name:str):
-        new Commodity(group, id, name)
+        return Commodity(group, id, name)
 
     def createIndicator(self, id:int, frequency:int, freqDesc:str, geogLocation:str, indicatorGroup:IndicatorGroup, unit:Unit ):
         return Indicator(id, frequency, freqDesc, geogLocation, indicatorGroup, unit)

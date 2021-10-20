@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Describable(ABC):
     def __init__(self):
         super(Describable, self).__init__()
@@ -7,3 +8,4 @@ class Describable(ABC):
     @abstractmethod
     def describe(self):
         pass
+

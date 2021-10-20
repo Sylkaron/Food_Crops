@@ -23,5 +23,5 @@ class Commodity(Describable):
     def __init__(self, group: CommodityGroup, id: int, name: str):
         super(Commodity, self).__init__()
         self.id = id
-        self.name = name
+        self.__name = name
         self.group = group
