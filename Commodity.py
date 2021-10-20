@@ -21,5 +21,7 @@ class CommodityGroup(Enum):
 
 class Commodity(Describable):
     def __init__(self, group: CommodityGroup, id: int, name: str):
+        super(Commodity, self).__init__()
         self.id = id
         self.name = name
+        self.group = group
