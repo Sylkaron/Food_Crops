@@ -1,4 +1,5 @@
-import Unit, Indicator, Measurement
+import Indicator, Measurement
+from Unit import *
 
 class FoodCropFactory():
 
