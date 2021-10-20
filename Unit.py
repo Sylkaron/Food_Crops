@@ -3,15 +3,15 @@ import Describable
 
 
 class Unit(ABC, Describable):
-    def __init__(self, name: str, id: int):
+    def __init__(self, id: int, name: str):
         super(Unit, self).__init__()
-        self.name = name
         self.id = id
+        self.name = name
 
 
 class Volume(Unit):
     def __init__(self, id: int, multiplier: float, name: str = 'Volume'):
-        super(Volume, self).__init__( id, name)
+        super(Volume, self).__init__(id, name)
         self.__multiplier = multiplier
 
 
@@ -20,26 +20,19 @@ class Price(Unit):
         super(Price, self).__init__(id, name)
 
 
-
 class Weight(Unit):
-    def __init__(self, id: int, multiplier:float, name: str = 'Weight' ):
+    def __init__(self, id: int, multiplier: float, name: str = 'Weight'):
         super(Weight, self).__init__(id, name)
         self.__multiplier = multiplier
 
 
 class Surface(Unit):
-    def __init__(self, id: int, multiplier:float, name: str = 'Surface'):
+    def __init__(self, id: int, multiplier: float, name: str = 'Surface'):
         super(Surface, self).__init__(id, name)
         self.multiplier = multiplier
 
+
 class Count(Unit):
-    def __init__(self, id: int, what: str, name: str = 'Count' ):
+    def __init__(self, id: int, what: str, name: str = 'Count'):
         super(Count, self).__init__(id, name)
         self.__what = what
-
-
-
-
-
-
-
