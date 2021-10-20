@@ -2,6 +2,8 @@ from enum import Enum
 import Describable
 
 class IndicatorGroup(Enum):
+    EXPORTS_AND_IMPORTS = 1
+
 
 
 class Indicator():
