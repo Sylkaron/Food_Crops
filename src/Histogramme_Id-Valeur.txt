@@ -1,0 +1,529 @@
+SC_GroupDesc
+
+1,Prices
+2,Supply and use
+3,Exports and imports
+4,Transportation
+5,Animal unit indexes
+6,Quantities fed
+7,Feed-price ratios
+
+
+
+SC_GroupCommod_Desc
+
+10,Byproduct feeds
+11,Coarse grains
+12,Corn
+13,Energy feeds
+14,Feed grains
+15,Grain protein feeds
+16,Hay
+17,Oats
+18,Oilseed meal feeds
+19,Processed feeds
+20,Sorghum
+8,Animal protein feeds
+9,Barley
+
+
+SC_GeographyIndented_Desc
+
+100,          Norway
+101,          Finland
+102,          Faroe Islands
+103,          Denmark
+104,          United Kingdom
+105,          Ireland
+106,          Netherlands
+108,          Belgium
+109,          Luxembourg
+10,"U.S. - Memphis, TN"
+112,          Monaco
+113,          France
+114,"          Germany, Fed. Republic; United, Begins 1"
+115,"          German Democratic Republic, Ends 9/1990"
+116,          Austria
+117,"          Former Czechoslovakia, Ends 12/1992"
+118,          Czech Republic
+119,          Slovakia
+11,"U.S. - Minneapolis, MN"
+120,          Hungary
+121,          Liechtenstein
+122,          Switzerland
+124,          Estonia
+125,          Latvia
+126,          Lithuania
+127,          Poland
+128,"          Former Ussr, Begins 1/1989 & Ends 1/1993"
+129,"          Russian Federation, Begins 2/1992"
+12,"U.S. - Plainview to Muleshoe, TX"
+130,          Belarus
+131,          Ukraine
+132,          Armenia
+133,          Azerbaijan
+134,          Georgia
+135,          Kazakhstan
+136,          Kyrgyzstan
+137,          Moldova
+138,          Tajikistan
+139,          Turkmenistan
+13,"U.S. - Portland, OR"
+140,          Uzbekistan
+141,          Spain
+142,          Portugal
+144,          Malta And Gozo
+147,          Vatican City
+148,          Italy
+149,"          Former Yugoslavia, Ends 5/1992"
+14,U.S. - Midwest
+150,          Croatia
+151,          Slovenia
+152,          Bosnia-Hercegovina
+153,          Macedonia (Skopje)
+154,          Serbia and Montenegro
+155,          Albania
+156,          Greece
+157,          Romania
+158,          Bulgaria
+159,        Turkey
+15,U.S. - AR points
+160,          Cyprus
+161,        Syria
+162,        Lebanon
+163,        Iraq
+164,        Iran
+166,        Israel
+168,        West Bank
+169,        Jordan
+16,"U.S. - Domestic, East Coast"
+170,        Kuwait
+172,        Saudi Arabia
+173,        Qatar
+174,        United Arab Emirates
+175,"        Yemen (Sana), Ends 9/1990 & United Begin"
+177,        Oman
+178,        Bahrain
+179,          Afghanistan
+17,"U.S. - Lawrenceburg, IN"
+180,          India
+181,          Pakistan
+182,          Nepal
+183,          Bangladesh
+184,          Sri Lanka
+185,          Myanmar (Burma)
+186,          Thailand
+187,          Vietnam
+188,          Laos
+189,          Cambodia
+18,"U.S. - IL points, IL"
+190,          Malaysia
+191,          Singapore
+192,          Indonesia
+194,          Brunei
+195,          Philippines
+196,          Macao (Macau)
+197,          Bhutan
+199,          China (Mainland)
+1,United States
+200,          Mongolia
+201,          North Korea
+202,          South Korea
+203,          Hong Kong
+204,          China (Taiwan)
+205,          Japan
+206,          Kosovo
+207,        Australia (No Islands)
+208,        Norfolk Island
+209,        Cocos (Keeling) Islands
+20,U.S. - Central US
+210,        Christmas Island(Indian Ocean)
+212,        Papua New Guinea
+213,"        New Zealand, No Islands (=Old Code 6140)"
+214,        Cook Islands
+215,        Tokelau Islands
+216,        Niue
+217,        Samoa
+218,        Solomon Islands
+21,U.S. - AR
+221,        Kiribati
+223,        New Caledonia
+225,        French Polynesia
+226,        Marshall Islands
+227,"        Micronesia, Federated States"
+228,        Palau
+22,"U.S. - Fort Worth, TX"
+230,        Fiji
+231,        Tonga
+232,        Morocco
+233,        Algeria
+234,        Tunisia
+235,        Libya
+236,        Egypt
+237,        Sudan
+238,        Western Sahara
+239,        Equatorial Guinea
+23,"U.S. - New York, NY"
+240,        Mauritania
+241,        Cameroon
+242,        Senegal
+243,        Mali
+244,        Guinea
+245,        Sierra Leone
+246,        Ivory Coast
+247,        Ghana
+248,        The Gambia
+249,        Niger
+250,        Togo
+251,        Nigeria
+252,        Central African Republic
+253,        Gabon
+254,        Chad
+255,        St Helena
+256,        Burkina Faso
+257,        Benin
+258,        Angola
+259,        Congo(Brazzville)
+25,World
+260,        Guinea-Bissau
+261,        Cape Verde Islands
+262,        Sao Tome And Principe
+263,        Liberia
+264,        Congo(Kinshasa)
+265,        Burundi
+266,        Rwanda
+267,        Somalia
+269,"        Eritrea, Begins 7/1993"
+26,  Latin America
+270,"        Ethiopia, United Ends 6/1993 & New Begin"
+271,        Djibouti
+272,        Uganda
+273,        Kenya
+274,        Seychelles
+276,        Tanzania
+277,        Mauritius
+278,        Mozambique
+279,        Madagascar (Malagasy)
+27,      Central America
+280,        Mayotte
+281,        Comoros
+282,"        Reunion (Island, French)"
+284,        Republic Of South Africa
+285,        Namibia
+286,        Botswana
+287,        Zambia
+288,        Swaziland
+289,        Zimbabwe
+28,      Caribbean
+290,        Malawi
+291,        Lesotho
+292,    Unidentified Country
+297,      European Union-27
+298,          Serbia
+299,          Montenegro
+29,      South America
+2,  World less U.S.
+300,  Caribbean Basin (CBERA)
+30,        European Union-15
+31,    Asia and Middle East
+329,       Yemen United
+32,      Middle East
+336,        Sint Maarten
+337,        Curacao
+338,        Sudan
+339,        South Sudan
+33,        South Asia
+34,        Southeast Asia
+35,    Oceania
+36,    Africa
+37,      North Africa
+38,      Sub-Saharan Africa
+39,    Western Hemisphere
+3,U.S. - Central IL
+40,      North America
+41,    Europe/Eurasia
+42,      European Union-25
+43,        Acceding-10
+44,      Other Europe
+45,      Former Soviet Union-12
+46,      Asia
+47,        East Asia
+48,        Greenland
+49,        Canada
+4,"U.S. - Gulf ports, LA"
+51,        Mexico
+52,        Guatemala
+53,        Belize
+54,        El Salvador
+55,        Honduras
+56,        Nicaragua
+57,        Costa Rica
+58,        Panama
+59,        Bermuda
+5,"U.S. - St Louis, MO"
+60,        Bahamas
+61,        Cuba
+62,        Jamaica
+63,        Turks And Caicos Islands
+64,        Cayman Islands
+65,        Haiti
+66,        Dominican Republic
+67,        Anguilla
+68,        British Virgin Islands
+69,        St. Kitts-Nevis
+6,"U.S. - Omaha, NE"
+70,        Antigua & Barbuda
+71,        Montserrat
+72,        Dominica
+73,        St. Lucia
+74,        St. Vincent And The Grenadine
+75,        Grenada
+76,        Barbados
+77,        Trinidad And Tobago
+78,        Netherlands Antilles
+79,        Aruba
+7,"U.S. - Chicago, IL"
+80,        Guadeloupe
+81,        Martinique
+82,        Colombia
+83,        Venezuela
+84,        Guyana
+85,        Suriname
+86,        French Guiana
+87,        Ecuador
+88,        Peru
+89,        Bolivia
+8,"U.S. - Kansas City, MO"
+90,        Chile
+91,        Brazil
+92,        Paraguay
+93,        Uruguay
+94,        Argentina
+96,          Iceland
+97,          Sweden
+99,          Svalbard And Jan Mayen Island
+9,"U.S. - Toledo, OH"
+
+
+SC_Commodity_Desc
+
+1,Barley
+2,Corn
+3,Oats
+4,Sorghum
+5,Coarse grains
+6,Feed grains
+7,Hay alfalfa (dry)
+8,Hay other (dry)
+9,Hay all (dry)
+11,Corn grain
+12,All animals
+13,Barley feed
+14,Barley malting
+15,"Corn, No. 2 yellow"
+16,"Corn, No. 2 white"
+17,"Sorghum, No. 2 yellow"
+18,"Barley, No. 3 malting"
+19,"Barley, No. 2 feed"
+20,"Oats, No. 2 white heavy"
+21,Broiler-feed
+22,Market egg-feed
+23,Hog-corn
+24,Milk-feed
+25,Steer and heifer-corn
+26,Turkey-feed
+27,"Alfalfa meal, dehydrated, 17% protein"
+28,"Corn gluten feed, 21% protein"
+29,"Corn gluten meal, 60% protein"
+30,"Cottonseed meal, 41% solvent"
+31,"Feather meal, high protein"
+32,"Fish meal, 60% protein"
+33,Distillers dried grains
+34,Hominy feed
+36,Meat and bone meal
+37,"Rice bran, f.o.b. mills"
+38,"Soybean meal, high protein"
+39,"Urea, 42% nitrogen"
+40,Wheat bran
+41,Wheat middlings
+42,Corn starch
+43,"Corn meal, yellow"
+44,Corn syrup
+45,Brewers grits
+46,"HFCS, 42%"
+47,Dextrose
+48,Barley grain
+49,Oats grain
+50,Other barley
+53,White corn
+54,"Line-haul railroads, all products"
+55,Grain
+56,Wheat
+57,Energy feeds
+58,Soybean meal
+59,Cottonseed meal
+60,Rapeseed (canola) meal
+61,Linseed meal
+62,Peanut meal
+63,Sunflower meal
+64,Oilseed meals
+65,Meal and bone meal tankage
+66,Fishmeal and solubles
+67,Milk products
+68,Animal-protein feeds
+69,Corn gluten feed and meal
+70,Wheat millfeeds
+71,Rice millfeeds
+72,Fats and oils
+73,Miscellaneous byproduct feeds
+74,Other byproduct feeds
+75,Alcohol total
+76,Brewers' and distillers' dregs & waste
+77,Barley products
+78,Corn products
+79,Oats products
+89,"Rail freight, farm products"
+90,"Rail freight, grain food products"
+92,"Soybean meal, 44% protein"
+207,Dairy
+208,Cattle on feed
+209,Other cattle
+210,Hogs
+211,Poultry
+212,Other livestock
+
+
+SC_Attribute_Desc
+
+1,Planted acreage
+2,Harvested acreage
+3,Yield per harvested acre
+4,Production
+5,Prices received by farmers
+9,Beginning stocks
+10,"Food, seed, and industrial use"
+11,Feed use
+12,Domestic disappearance
+13,"Imports, market year"
+14,"Exports, market year"
+15,Ending stocks
+16,Total supply
+19,"Imports, to U.S. from specified source"
+20,"Food, alcohol, and industrial use"
+21,Seed use
+22,Feed and residual use
+23,Total domestic use
+24,"Exports, from U.S. to specified destination"
+25,Total disappearance
+26,Supply per RCAU
+27,Disappearance per RCAU
+28,Hay stocks
+31,"Prices, market"
+32,Price ratio
+33,"Prices, wholesale"
+34,"Imports, trade year"
+35,"Exports, trade year"
+36,Total distribution
+37,Producer price index
+38,Rail car loadings
+39,High-fructose corn syrup (HFCS) use
+40,Glucose and dextrose use
+41,Starch use
+42,Alcohol for fuel use
+43,Alcohol for beverages and manufacturing use
+44,Cereal and other product use
+45,CCC-owned inventory (stocks)
+46,Commercial stocks
+58,Grain consuming animal units (GCAU)
+59,High protein animal units (HPAU)
+60,Roughage consuming animal units (RCAU)
+61,Grain & roughage consumption animal units (GRCAU)
+
+
+
+SC_Unit_Desc
+
+
+1,Million bushels
+2,Million acres
+3,Bushels
+4,Dollars per bushel
+5,Dollars per cwt
+6,Bushels per acre
+7,"1,000 metric tons"
+8,Million metric tons
+9,"1,000 tons"
+10,"1,000 acres"
+11,Tons per acre
+12,Dollars per ton
+13,Ratio
+14,Cents per pound
+15,Index (1984=100)
+16,Carloads originated
+17,"1,000 liters"
+18,Gallons
+31,Dollars per short ton
+41,Ton
+44,"1,000 hectare"
+45,Metric tons per hectare
+46,Million animal units
+
+
+SC_Frequency_Desc
+
+1,Monthly
+2,Quarterly
+3,Annual
+
+
+Timeperiod_Desc
+
+1,Jan
+2,Feb
+3,Mar
+4,Apr
+5,May
+6,Jun
+7,Jul
+8,Aug
+9,Sep
+10,Oct
+11,Nov
+12,Dec
+13,Q1 Jan-Mar
+14,Q2 Apr-Jun
+15,Q3 Jul-Sep
+16,Q4 Oct-Dec
+17,CY Jan-Dec
+19,MY Jun-May
+20,Q1 Jun-Aug
+21,Q2 Sep-Nov
+22,Q3 Dec-Feb
+23,Q4 Mar-May
+24,Q1 Sep-Nov
+25,Q2 Dec-Feb
+26,Q3 Mar-May
+27,Q4 Jun-Aug
+28,MY Aug-Jul
+29,MRAE
+31,MY Sep-Aug
+58,MMY Q1 
+59,MMY Q2
+60,MMY Q3
+61,MMY Q4
+63,MMY AT
+69,Commodity Market Year
+75,May 1
+82,Dec 1
+87,MY May-Apr
+114,MY Oct-Sep
+115,CY 5YR Quarterly Moving Average for Jan-Mar
+116,CY 5YR Quarterly Moving Average for Apr-Jun
+117,CY 5YR Quarterly Moving Average for Jul-Sep
+118,CY 5YR Quarterly Moving Average for Oct-Dec
+119,MY 5YR Quarterly Moving Average for Sep-Nov
+120,MY 5YR Quarterly Moving Average for Dec-Feb
+121,MY 5YR Quarterly Moving Average for Mar-May
+122,MY 5YR Quarterly Moving Average for Jun-Aug
+137,Local Market Year
+
