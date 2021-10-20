@@ -2,7 +2,7 @@ import pandas
 
 
 class FoodCropsDataset:
-    def __init__(self):
+    def __init__(self,):
 
     def load(self, datasetPath: str):
         dataset = pandas.read_csv(datasetPath)

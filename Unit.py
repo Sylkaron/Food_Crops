@@ -36,3 +36,8 @@ class Count(Unit):
     def __init__(self, id: int, what: str, name: str = 'Count'):
         super(Count, self).__init__(id, name)
         self.__what = what
+
+class Ratio(Unit):
+    def __init__(self, id: int, what: str, name: str = 'Ratio'):
+        super(Ratio, self).__init__(id, name)
+
