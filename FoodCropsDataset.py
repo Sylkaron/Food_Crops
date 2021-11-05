@@ -37,28 +37,28 @@ class FoodCropsDataset:
             Amount = row["Amount"]
 
             if "ratio"  in UnitDesc.lower():
-                U = F.createRatio(UnitID)
+                U = self.F.createRatio(UnitID)
             elif "dollar" or "euro" in UnitDesc.lower():
-                U = F.createPrice(UnitID)
+                U = self.F.createPrice(UnitID)
             elif "liter" or "Bushel" or "gallon" in UnitDesc.lower():
-                U = F.createVolume(UnitID)
+                U = self.F.createVolume(UnitID)
             elif "ton" in UnitDesc.lower():
 
                 if "000" in UnitDesc.lower():
-                    U = F.createWeight(UnitID, 1000)
+                    U = self.F.createWeight(UnitID, 1000)
                 else :
-                    U = F.createWeight(UnitID, 1)
+                    U = self.F.createWeight(UnitID, 1)
 
             elif "acre" in UnitDesc.lower():
-                U = F.createSurface(UnitID)
+                U = self.F.createSurface(UnitID)
             else :
-                U = F.createCount(UnitID,UnitDesc)
+                U = self.F.createCount(UnitID,UnitDesc)
 
-            I = F.createIndicator(IndicatorID, FreqID, FreqDesc, GeographyDesc,IndicatorGroup(IndicatorID), groupCommodityID, U)
+            I = self.F.createIndicator(IndicatorID, FreqID, FreqDesc, GeographyDesc,IndicatorGroup(IndicatorID), groupCommodityID, U)
 
-            G = F.createCommodity(CommodityGroup(groupCommodityID), groupCommodityID, groupCommodityDesc)
+            G = self.F.createCommodity(CommodityGroup(groupCommodityID), groupCommodityID, groupCommodityDesc)
 
-            M = F.createMeasurement(index, YearID, Amount, timeperiodId, timeperiodDesc, G, I)
+            M = self.F.createMeasurement(index, YearID, Amount, timeperiodId, timeperiodDesc, G, I)
 
             self.unitMeasurementIndex[index] = U
             self.locationMeasurementIndex[index] = GeographyDesc
