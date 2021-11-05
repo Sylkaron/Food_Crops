@@ -71,7 +71,7 @@ class FoodCropFactory:
                         unit: Unit):
         if id not in self.__indicatorsRegistry:
             Indic = Indicator(id, frequency, freqDesc, geogLocation, indicatorGroup, unit)
-            self.indicatorRegistry[id] = Indic
+            self.__indicatorsRegistry[id] = Indic
             return Indic
         else:
             return self.__indicatorsRegistry[id]

@@ -10,9 +10,8 @@ class Unit(ABC, Describable):
 
 
 class Volume(Unit):
-    def __init__(self, id: int, multiplier: float, name: str = 'Volume'):
+    def __init__(self, id: int, name: str = 'Volume'):
         super(Volume, self).__init__(id, name)
-        self.__multiplier = multiplier
 
 
 class Price(Unit):
@@ -27,9 +26,8 @@ class Weight(Unit):
 
 
 class Surface(Unit):
-    def __init__(self, id: int, multiplier: float, name: str = 'Surface'):
+    def __init__(self, id: int, name: str = 'Surface'):
         super(Surface, self).__init__(id, name)
-        self.multiplier = multiplier
 
 
 class Count(Unit):
@@ -37,7 +35,7 @@ class Count(Unit):
         super(Count, self).__init__(id, name)
         self.__what = what
 
-class Ratio(Unit):
-    def __init__(self, id: int, what: str, name: str = 'Ratio'):
-        super(Ratio, self).__init__(id, name)
 
+class Ratio(Unit):
+    def __init__(self, id: int, name: str = 'Ratio'):
+        super(Ratio, self).__init__(id, name)

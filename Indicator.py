@@ -15,7 +15,7 @@ class IndicatorGroup(Enum):
 
 class Indicator(Describable):
 
-    def __init__(self, id: str, frequency: int, frequencyDesc: str, geogLocation: str, indicatorGroup: IndicatorGroup,
+    def __init__(self, id: int, frequency: int, frequencyDesc: str, geogLocation: str, indicatorGroup: IndicatorGroup,
                  unit: Unit):
         super(Indicator, self).__init__()
         self.id = id

@@ -7,9 +7,9 @@ class FoodCropsDataset:
     def __init__(self):
         self.F = FoodCropFactory()
         self.commodityGroupMeasurementIndex = dict()
-        self.indicatorGroupMesurementIndex = dict()
+        self.indicatorGroupMeasurementIndex = dict()
         self.locationMeasurementIndex = dict()
-        self.unitMesurementIndex = dict()
+        self.unitMeasurementIndex = dict()
 
     def load(self, datasetPath: str):
         dataframe = pandas.read_csv(datasetPath)
@@ -53,10 +53,10 @@ class FoodCropsDataset:
 
             M = F.createMeasurement(index, YearID, Amount, timeperiodId, timeperiodDesc, G, I)
 
-            self.unitMesurementIndex[index] = U
+            self.unitMeasurementIndex[index] = U
             self.locationMeasurementIndex[index] = GeographyDesc
             self.commodityGroupMeasurementIndex[index] = G
-            self.indicatorGroupMesurementIndex[index] = I
+            self.indicatorGroupMeasurementIndex[index] = I
 
     def findMeasurements(self, commodityType: CommodityType = None, indicatorGroup: IndicatorGroup = None,
                          geographicalLocation: str = None, unit: Unit = None):
