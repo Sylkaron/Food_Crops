@@ -1,7 +1,6 @@
 import pandas
 from FoodCropFactory import *
-import IndicatorGroup
-import CommodityGroup
+from Commodity import *
 
 
 class FoodCropsDataset:
@@ -15,10 +14,12 @@ class FoodCropsDataset:
 
     def load(self, datasetPath: str):
         dataframe = pandas.read_csv(datasetPath)
+
+        L = []
         for index, row in dataframe.iterrows():
             IndicatorID = row["SC_Group_ID"]
             IndicatorDesc = row["SC_Group_Desc"]
-            groupCommodityID =  row["SC_GroupCommod_ID"]
+            groupCommodityID = row["SC_GroupCommod_ID"]
             groupCommodityDesc = row["SC_GroupCommod_Desc"]
             GeographyID = row["SC_Geography_ID"]
             SortOrder = row["SortOrder"]
@@ -36,7 +37,7 @@ class FoodCropsDataset:
             TimePDesc = row["Timeperiod_Desc"]
             Amount = row["Amount"]
 
-            if "ratio"  in UnitDesc.lower():
+            if "ratio" in UnitDesc.lower():
                 U = self.F.createRatio(UnitID)
             elif "dollar" or "euro" in UnitDesc.lower():
                 U = self.F.createPrice(UnitID)
@@ -46,26 +47,29 @@ class FoodCropsDataset:
 
                 if "000" in UnitDesc.lower():
                     U = self.F.createWeight(UnitID, 1000)
-                else :
+                else:
                     U = self.F.createWeight(UnitID, 1)
 
             elif "acre" in UnitDesc.lower():
                 U = self.F.createSurface(UnitID)
-            else :
-                U = self.F.createCount(UnitID,UnitDesc)
+            else:
+                U = self.F.createCount(UnitID, UnitDesc)
 
-            I = self.F.createIndicator(IndicatorID, FreqID, FreqDesc, GeographyDesc,IndicatorGroup(IndicatorID), groupCommodityID, U)
+            Ind = self.F.createIndicator(IndicatorID, FreqID, FreqDesc, GeographyDesc, IndicatorGroup(IndicatorID), U)
 
             G = self.F.createCommodity(CommodityGroup(groupCommodityID), groupCommodityID, groupCommodityDesc)
 
-            M = self.F.createMeasurement(index, YearID, Amount, timeperiodId, timeperiodDesc, G, I)
+            M = self.F.createMeasurement(index, YearID, Amount, TimePID, TimePDesc, G, Ind)
 
             self.unitMeasurementIndex[index] = U
             self.locationMeasurementIndex[index] = GeographyDesc
             self.commodityGroupMeasurementIndex[index] = G
-            self.indicatorGroupMeasurementIndex[index] = I
+            self.indicatorGroupMeasurementIndex[index] = Ind
 
-    def findMeasurements(self, commodityType: CommodityType = None, indicatorGroup: IndicatorGroup = None,
+            L.append(M)
+
+        return L
+
+    def findMeasurements(self, commodityGroup: CommodityGroup = None, indicatorGroup: IndicatorGroup = None,
                          geographicalLocation: str = None, unit: Unit = None):
-
         return

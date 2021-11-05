@@ -17,7 +17,6 @@ class Volume(Unit):
         super(Volume, self).__init__(id, name)
 
 
-
 class Price(Unit):
     def __init__(self, id: int, name: str = 'Price'):
         super(Price, self).__init__(id, name)
@@ -43,7 +42,7 @@ class Count(Unit):
         self.__what = what
 
     def describe(self):
-        return "Unit ID : "+str(self.id)+"\n"+self.name + "\n Objets : " + str(self.__what))
+        return "Unit ID : "+str(self.id)+"\n"+self.name + "\n Objets : " + str(self.__what)
 
 
 class Ratio(Unit):
