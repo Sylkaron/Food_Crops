@@ -28,7 +28,7 @@ class Weight(Unit):
         self.__multiplier = multiplier
 
     def describe(self):
-        return "Unit ID : "+str(self.id)+"\n"+self.name + "\n Multiplier : " + str(self.__multiplier())
+        return "Unit ID : "+str(self.id)+"\n"+self.name + "\n Multiplier : " + str(self.__multiplier)
 
 
 class Surface(Unit):
