@@ -8,10 +8,14 @@ class Unit(ABC, Describable):
         self.id = id
         self.name = name
 
+    def describe(self):
+        return "Unit ID : "+str(self.id)+"\n"+self.name
+
 
 class Volume(Unit):
     def __init__(self, id: int, name: str = 'Volume'):
         super(Volume, self).__init__(id, name)
+
 
 
 class Price(Unit):
@@ -24,6 +28,9 @@ class Weight(Unit):
         super(Weight, self).__init__(id, name)
         self.__multiplier = multiplier
 
+    def describe(self):
+        return "Unit ID : "+str(self.id)+"\n"+self.name + "\n Multiplier : " + str(self.__multiplier())
+
 
 class Surface(Unit):
     def __init__(self, id: int, name: str = 'Surface'):
@@ -34,6 +41,9 @@ class Count(Unit):
     def __init__(self, id: int, what: str, name: str = 'Count'):
         super(Count, self).__init__(id, name)
         self.__what = what
+
+    def describe(self):
+        return "Unit ID : "+str(self.id)+"\n"+self.name + "\n Objets : " + str(self.__what))
 
 
 class Ratio(Unit):

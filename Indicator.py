@@ -24,3 +24,6 @@ class Indicator(Describable):
         self.__geogLocation = geogLocation
         self.indicatorGroup = indicatorGroup
         self.unit = unit
+
+    def describe(self):
+        return "Indicator n° : " + str(self.id) + "\n frequence : " + str(self.__frequency) + " " + self.__frequencyDesc + "\n Localisation : "+self.__geogLocation + "\n Unit : " + self.unit.describe()

@@ -1,5 +1,7 @@
 import pandas
 from FoodCropFactory import *
+import IndicatorGroup
+import CommodityGroup
 
 
 class FoodCropsDataset:
@@ -14,7 +16,7 @@ class FoodCropsDataset:
     def load(self, datasetPath: str):
         dataframe = pandas.read_csv(datasetPath)
         for index, row in dataframe.iterrows():
-            IndicatorID = row["SC_Group_ID"] * 1000
+            IndicatorID = row["SC_Group_ID"]
             IndicatorDesc = row["SC_Group_Desc"]
             groupCommodityID =  row["SC_GroupCommod_ID"]
             groupCommodityDesc = row["SC_GroupCommod_Desc"]
@@ -34,22 +36,27 @@ class FoodCropsDataset:
             TimePDesc = row["Timeperiod_Desc"]
             Amount = row["Amount"]
 
-            if "per" or "ratio"  in UnitDesc.lower():
+            if "ratio"  in UnitDesc.lower():
                 U = F.createRatio(UnitID)
             elif "dollar" or "euro" in UnitDesc.lower():
                 U = F.createPrice(UnitID)
             elif "liter" or "Bushel" or "gallon" in UnitDesc.lower():
                 U = F.createVolume(UnitID)
             elif "ton" in UnitDesc.lower():
-                U = F.createWeight(UnitID, UnitDesc)
+
+                if "000" in UnitDesc.lower():
+                    U = F.createWeight(UnitID, 1000)
+                else :
+                    U = F.createWeight(UnitID, 1)
+
             elif "acre" in UnitDesc.lower():
                 U = F.createSurface(UnitID)
             else :
                 U = F.createCount(UnitID,UnitDesc)
 
-            I = F.createIndicator(IndicatorID, FreqID, FreqDesc, GeographyDesc, groupCommodityID, U)
+            I = F.createIndicator(IndicatorID, FreqID, FreqDesc, GeographyDesc,IndicatorGroup(IndicatorID), groupCommodityID, U)
 
-            G = F.createCommodity(groupCommodityID, groupCommodityDesc)
+            G = F.createCommodity(CommodityGroup(groupCommodityID), groupCommodityID, groupCommodityDesc)
 
             M = F.createMeasurement(index, YearID, Amount, timeperiodId, timeperiodDesc, G, I)
 
@@ -60,4 +67,5 @@ class FoodCropsDataset:
 
     def findMeasurements(self, commodityType: CommodityType = None, indicatorGroup: IndicatorGroup = None,
                          geographicalLocation: str = None, unit: Unit = None):
+
         return
