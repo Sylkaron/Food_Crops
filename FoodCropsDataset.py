@@ -1,6 +1,7 @@
 import pandas
 from FoodCropFactory import *
-from Commodity import *
+import IndicatorGroup
+import CommodityGroup
 
 
 class FoodCropsDataset:
