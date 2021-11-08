@@ -1,7 +1,8 @@
 import pandas
+
+from Commodity import *
 from FoodCropFactory import *
 from Indicator import *
-from Commodity import *
 
 
 class FoodCropsDataset:
@@ -71,6 +72,51 @@ class FoodCropsDataset:
 
         return L
 
-    def findMeasurements(self, commodityGroup: CommodityGroup = None, indicatorGroup: IndicatorGroup = None,
+    def findmeasurements(self, commodityGroup: CommodityGroup = None, indicatorGroup: IndicatorGroup = None,
                          geographicalLocation: str = None, unit: Unit = None):
-        return
+        indexG = []
+        indexGI = []
+        indexGIL = []
+        indexGILU = []
+
+
+        L = self.load(datasetPath="/src/FeedGrains.csv")
+
+        n = len(len(self.commodityGroupMeasurementIndex))
+
+        for i in range(n):
+            if self.commodityGroupMeasurementIndex[i] == commodityGroup:
+                indexG.append(i)
+
+        if len(indexG) > 0:
+            for k in indexG:
+                if self.indicatorGroupMeasurementIndex[k] == indicatorGroup:
+                    indexGI.append(k)
+        else:
+            for k in range(n):
+                if self.indicatorGroupMeasurementIndex[k] == indicatorGroup:
+                    indexGI.append(k)
+
+        if len(indexGI) > 0:
+            for k in indexGI:
+                if self.locationMeasurementIndex[k] == geographicalLocation:
+                    indexGIL.append(k)
+        else:
+            for k in range(n):
+                if self.locationMeasurementIndex[k] == geographicalLocation:
+                    indexGIL.append(k)
+
+        if len(indexGIL) > 0:
+            for k in indexGIL:
+                if self.unitMeasurementIndex[k] == unit:
+                    indexGILU.append(k)
+        else:
+            for k in range(n):
+                if self.unitMeasurementIndex[k] == unit:
+                    indexGILU.append(k)
+
+        if len(indexGILU) > 0:
+            return [L[i] for i in indexGILU]
+
+        else:
+            return L
