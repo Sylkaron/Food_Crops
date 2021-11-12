@@ -4,13 +4,13 @@ import Unit
 
 
 class IndicatorGroup(Enum):
-    EXPORTS_AND_IMPORTS = 1
+    EXPORTS_AND_IMPORTS = 3
     SUPPLY_AND_USE = 2
-    PRICES = 3
-    FEED_PRICES_RATIOS = 4
-    QUANTITIES_FED = 5
-    TRANSPORTATION = 6
-    ANIMAL_UNIT_INDEXES = 7
+    PRICES = 1
+    FEED_PRICES_RATIOS = 7
+    QUANTITIES_FED = 6
+    TRANSPORTATION = 4
+    ANIMAL_UNIT_INDEXES = 5
 
 
 class Indicator(Describable.Describable):
