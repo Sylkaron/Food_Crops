@@ -49,8 +49,8 @@ class FoodCropsDataset:
 
                 if "000" in UnitDesc.lower():
                     U = self.F.createWeight(UnitID, 1000)
-                elif "million" in UnitDesc.lower():
-                    U = self.F.createWeight(UnitID,1000000)
+                elif "Million" in UnitDesc.lower():
+                    U = self.F.createWeight(UnitID, 1000000)
                 else:
                     U = self.F.createWeight(UnitID, 1)
             elif "acre" in UnitDesc.lower():
