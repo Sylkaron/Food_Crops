@@ -1,8 +1,7 @@
-from abc import ABC
 import Describable
 
 
-class Unit(ABC, Describable):
+class Unit(Describable):
     def __init__(self, id: int, name: str):
         super(Unit, self).__init__()
         self.id = id
