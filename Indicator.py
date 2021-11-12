@@ -13,7 +13,7 @@ class IndicatorGroup(Enum):
     ANIMAL_UNIT_INDEXES = 7
 
 
-class Indicator(Describable):
+class Indicator(Describable.Describable):
 
     def __init__(self, id: int, frequency: int, frequencyDesc: str, geogLocation: str, indicatorGroup: IndicatorGroup,
                  unit: Unit):

@@ -19,7 +19,7 @@ class CommodityGroup(Enum):
     OTHER = 13
 
 
-class Commodity(Describable):
+class Commodity(Describable.Describable):
     def __init__(self, group: CommodityGroup, id: int, name: str):
         super(Commodity, self).__init__()
         self.id = id

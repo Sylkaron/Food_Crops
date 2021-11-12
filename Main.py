@@ -9,17 +9,18 @@ fcd = FoodCropsDataset()
 while not end:
     print("We will define what you are looking for.")
     print("You can look at the different option of research in the source folder")
+    print("")
     commodityGroup = None
     indicatorGroup = None
     geographicalLocalisation = None
     unit = None
 
-    commodityGroup = input("Which commodity do you search ?")
-    indicatorGroup = input("Which type of indicator are you searching ?")
-    geographicalLocalisation = input("Where is the factory you are searching for?")
-    unit = input("Which is the unit of your commodity ?")
+    commodityGroup = input("Which commodity do you search ?  ")
+    indicatorGroup = input("Which type of indicator are you searching ?  ")
+    geographicalLocalisation = input("Where is the factory you are searching for?  ")
+    unit = input("Which is the unit of your commodity ?  ")
 
-    result = fcd.findMeasurements(commodityGroup, indicatorGroup, geographicalLocalisation, unit)
+    result = fcd.findmeasurements(commodityGroup, indicatorGroup, geographicalLocalisation, unit)
     for measurement in result:
         measurement.describe()
 

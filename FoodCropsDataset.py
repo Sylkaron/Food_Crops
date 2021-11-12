@@ -81,7 +81,7 @@ class FoodCropsDataset:
         indexGILU = []
 
 
-        L = self.load(datasetPath="/src/FeedGrains.csv")
+        L = self.load(datasetPath = "src/FeedGrains.csv")
 
         n = len(len(self.commodityGroupMeasurementIndex))
 

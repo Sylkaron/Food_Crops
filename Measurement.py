@@ -3,7 +3,7 @@ import Describable
 import Indicator
 
 
-class Measurement(Describable):
+class Measurement(Describable.Describable):
     def __init__(self, id: int, year: int, value: float, timeperiodld: int, timeperiodDesc: str,
                  commodity: Commodity, indicator: Indicator):
         super(Measurement, self).__init__()
