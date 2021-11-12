@@ -60,7 +60,7 @@ class FoodCropsDataset:
 
             Ind = self.F.createIndicator(IndicatorID, FreqID, FreqDesc, GeographyDesc, IndicatorGroup(IndicatorID), U)
 
-            if type(groupCommodityID) != int :
+            if type(groupCommodityID) != int:
                 groupCommodityID = 0
 
             G = self.F.createCommodity(CommodityGroup(groupCommodityID), groupCommodityID, groupCommodityDesc)
@@ -83,9 +83,7 @@ class FoodCropsDataset:
         indexGIL = []
         indexGILU = []
 
-
-        L = self.load(datasetPath = "src/FeedGrains.csv")
-
+        L = self.load(datasetPath="src/FeedGrains.csv")
         n = len(self.commodityGroupMeasurementIndex)
 
         for i in range(n):

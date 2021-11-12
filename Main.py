@@ -24,7 +24,9 @@ while not end:
 
     for measurement in result:
         print(measurement.describe())
-    print(len(result), " Mesures Corespondent aux critères")
+    print(" Number of measurements corresponding: ", len(result))
+
+    print("")
     exit = input("Do u wanna do another research bro? yes/no")
     if exit == "yes" or "Yes":
         end = True
