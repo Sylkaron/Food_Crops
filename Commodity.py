@@ -17,6 +17,7 @@ class CommodityGroup(Enum):
     PROCESSED_FEEDS = 19
     ENERGY_FEEDS = 13
     OILSEED_MEAL_FEEDS = 18
+    OTHER = 0
 
 
 class Commodity(Describable.Describable):

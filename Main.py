@@ -21,9 +21,10 @@ while not end:
     unit = input("Which is the unit of your commodity ?  ")
 
     result = fcd.findmeasurements(commodityGroup, indicatorGroup, geographicalLocalisation, unit)
-    for measurement in result:
-        measurement.describe()
 
+    for measurement in result:
+        print(measurement.describe())
+    print(len(result), " Mesures Corespondent aux critères")
     exit = input("Do u wanna do another research bro? yes/no")
     if exit == "yes" or "Yes":
         end = True
