@@ -20,7 +20,6 @@ class FoodCropsDataset:
         L = []
         for index, row in dataframe.iterrows():
             IndicatorID = row["SC_Group_ID"]
-            IndicatorDesc = row["SC_Group_Desc"]
             groupCommodityID = row["SC_GroupCommod_ID"]
             groupCommodityDesc = row["SC_GroupCommod_Desc"]
             GeographyID = row["SC_Geography_ID"]

@@ -10,10 +10,6 @@ while not end:
     print("We will define what you are looking for.")
     print("You can look at the different option of research in the source folder")
     print("")
-    commodityGroup = None
-    indicatorGroup = None
-    geographicalLocalisation = None
-    unit = None
 
     commodityGroup = input("Which commodity do you search ?  ")
     indicatorGroup = input("Which type of indicator are you searching ?  ")
@@ -27,6 +23,6 @@ while not end:
     print(" Number of measurements corresponding: ", len(result))
 
     print("")
-    exit = input("Do u wanna do another research bro? yes/no")
-    if exit == "yes" or "Yes":
+    fin = input("Do u wanna do another research bro? Yes/No  ")
+    if fin == "yes" or "Yes":
         end = True

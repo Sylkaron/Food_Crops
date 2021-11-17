@@ -28,4 +28,4 @@ class Commodity(Describable.Describable):
         self.group = group
 
     def describe(self):
-        return "Commodity n° : " + str(self.id) + "\n nom = " + self.__name
+        return "Commodity : n° " + str(self.id) + " : " + self.__name
