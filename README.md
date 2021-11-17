@@ -72,7 +72,3 @@ résoudre avec une aide extérieure, mais qui nous a fait découvrir ce concept
 propre à python. La dernière difficulté rencontrée a été la syntaxe vis-à-vis
 de l'importation des classes présentes sur un autre fichier python mais qui a 
 encore été résolu grace des recherches de documentation.
-
-erreur:
-Metaclass
-Descibable.Describable
